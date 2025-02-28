@@ -109,9 +109,9 @@ All sides different is called, Scalene Triangle.
 Take the sides of a triangle as input and write a program to determine
 the triangle type. Change the inputs every time manually to see if the output changes correctly.*/
 
-const oneSide = 754;
-const twoSides = 754;
-const threeSides = 754;
+const oneSide = 3;
+const twoSides = 6;
+const threeSides = 9;
 
 if (oneSide === twoSides && oneSide === threeSides) {
   console.log("All sides equal is called, Equilateral Triangle.");
