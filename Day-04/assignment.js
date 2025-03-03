@@ -75,30 +75,30 @@ const month = "January";
 switch (month) {
   case "March":
   case "April":
-    console.log("Their horoscope sign is 'Aries'.");
+    console.log("Your Zodiac sign is 'Aries'.");
     break;
   case "May":
   case "June":
-    console.log("Their horoscope sign is 'Taurus'.");
+    console.log("Your Zodiac sign is 'Taurus'.");
     break;
   case "July":
   case "August":
-    console.log("Their horoscope sign is 'Gemini'.");
+    console.log("Your Zodiac sign is 'Gemini'.");
     break;
   case "September":
   case "October":
-    console.log("Their horoscope sign is 'Cancer'.");
+    console.log("Your Zodiac sign is 'Cancer'.");
     break;
   case "November":
   case "December":
-    console.log("Their horoscope sign is 'Leo'.");
+    console.log("Your Zodiac sign is 'Leo'.");
     break;
   case "January":
   case "February":
-    console.log("Their horoscope sign is 'Virgo'.");
+    console.log("Your Zodiac sign is 'Virgo'.");
     break;
   default:
-    console.log("Your input is Wrong!");
+    console.log("Invalid Month!");
 }
 
 // Task 6. Which Triangle?
