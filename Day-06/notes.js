@@ -9,6 +9,12 @@
  * 7. Rest Parameters
  * 8. Nested Function
  * 9. Callback Function
+ * 10. Pure Function
+ * 11. HOF(Higher Order Function)
+ * 12. Arrow Function
+ * 13. IIFE(Immediately Invoked Function Expression)
+ * 14. Call Stack
+ * 15. Recursion
  */
 
 // 1. function : Function is like where we can write codes/lines that we can use them
@@ -134,3 +140,37 @@ let multiples = (multi) => {
     return multi + "in Arrow Function.";
 };
 console.log(multiples("with Multiple statement "));
+
+
+/* 13. IIFE(Immediately Invoked Function Expression) : If you want to use something independently execute without being called... like(whatsapp, instagram chatbot) we will use IIFE*/
+
+(function(number){
+    console.log("IIFE", number);
+})(9) // set argument as a parameter to use
+
+/* 14. Call Stack : Call Stack is a process that when we call functions > get inside > also go to multi layer as needed >
+            call them > execute > and get outside of the function. */
+function outside() {
+        console.log("This is Main Function.");
+        in1()
+    }
+    function in1() {
+        console.log("1st insider function.");
+        in2()
+    }
+    function in2() {
+        console.log('This is the last One.');
+    }
+    outside();
+
+/* 15. Recursion : Recursion means a function call itself(as per need).*/
+    function recurs(count) {
+        console.log("Recursion no. ", count);
+        if(count === 0) {
+            console.log("Only Positive Numbers...");
+            return;
+        }
+        recurs(count-1)
+    }
+    recurs(5)
+
