@@ -148,7 +148,7 @@
           Then f3() function is the 2nd one and this time it will go inside the f3() function and there is
           f1() function inside the f3() function. so this will output f1() result 1st, then close it and also f3()
           will be closed. 
-          lastly, f1() function is called itself so inside the function it will go and return the output and stop the callStack.
+          lastly,f1() function is called itself so inside the function it will go and return the output and stop the callStack.
           f2
           f3(if anything before insider function)
           f1
