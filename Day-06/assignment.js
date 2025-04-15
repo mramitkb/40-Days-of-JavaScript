@@ -5,7 +5,7 @@
             const fahrenheit = (celsius * 9/5) + 32;
             return fahrenheit;
         }
-        // console.log(celsiusToFahrenheit(36));
+        console.log(celsiusToFahrenheit(36));
     
     /* 2. Create a Function to Find the Maximum of Two Numbers
       Write a function findMax(num1, num2) that returns the larger of the two numbers.
@@ -19,7 +19,7 @@
           }
         }
         const max = findMax(66, 4);
-        // console.log("Max number is", max);
+        console.log("Max number is", max);
     
     /* 3. Function to Check if a String is a Palindrome
       Create a function isPalindrome(str) that checks if a given string is a palindrome
@@ -36,40 +36,39 @@
             return "This isn't Palindrome."
           }
         }
-        // console.log(isPalindrome("Race Car"));
+        console.log(isPalindrome("Race Car"));
         
     /* 4. Write a Function to Find Factorial of a Number
       Create a function factorial(n) that returns the factorial of n. 
       Example 5! = 5 * 4 * 3 * 2 * 1 */
         function factorial(n) {
           if(n < 0) {
-            return "Factorial can't be a Negative Number."
+            return "Factorial should be a Positive Number.";
           }
           if(n === 0) {
             return 1;
           }
           else {
-            return n * factorial(n-1);
+            return n * factorial(n - 1);
           }
         }
-      //   console.log(factorial(5));
-
-      // Looping method
+        console.log(factorial(5));
+        // Looping method
         function factorial2(n2) {
-            if(n2 < 0) {
-                  return "Can't be a Negative Number."
-            }
-            if(n2 === 0) {
-                  return 1;
-            }
-            let base = 1;
-            for(let i = 1; i <= n2; i++) {
-              base *= i;
-            }
-            return base;
+          if(n2 < 0) {
+            return "Factorial should be a Positive Number.";
+          }
+          if(n2 === 0) {
+            return 1;
+          }
+          let demo = 1;
+          for(let i = 1; i <= n2; i++) {
+            demo *= i;
+          }
+          return demo;
         }
-        console.log(factorial2(5));
-        
+        console.log(factorial2(6));
+
     /* 5. Write a function to Count Vowels in a String
       Write a function countVowels(str) that counts the number of vowels 
       (a, e, i, o, u) in a given string. */
@@ -84,7 +83,7 @@
         console.log(count);
         return count;
       }
-      // countVowels("JavaScript");
+      countVowels("JavaScript");
     
     /* 6. Write a Function to Capitalize the First Letter of Each Word in a Sentence
       Write a function capitalizeWords(sentence) that takes a sentence and capitalizes
@@ -99,13 +98,13 @@
         }
         return capitalize.join(' ');
       }
-      // console.log(capitalizeWords("i am a full-stack web developer."));
+      console.log(capitalizeWords("i am a full-stack web developer."));
     
     /* 7. Use an IIFE to Print “Hello, JavaScript!”
       Write an IIFE that prints "Hello, JavaScript!" to the console. Here the Second
       word must be supplied using parameter and argument. */
         (function(param) {
-          // console.log("Hello,", param);
+          console.log("Hello,", param);
         })("JavaScript!");
     
     /* 8. Create a Simple Callback Function
@@ -115,8 +114,9 @@
           callback(name);
         }
         greet("Congratulation's 'Amit' for your Full-Stack Developer Journey.", function(name) {
-          // console.log(name);
+          console.log(name);
         })
+
     /* 9. Create Call Stack Execution Diagram for this flow */
         function f1() {
         }
