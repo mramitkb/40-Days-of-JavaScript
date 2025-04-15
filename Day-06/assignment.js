@@ -5,7 +5,7 @@
             const fahrenheit = (celsius * 9/5) + 32;
             return fahrenheit;
         }
-        console.log(celsiusToFahrenheit(36));
+      console.log(celsiusToFahrenheit(36));
     
     /* 2. Create a Function to Find the Maximum of Two Numbers
       Write a function findMax(num1, num2) that returns the larger of the two numbers.
