@@ -22,53 +22,57 @@ console.log("Getting Started with The Rock 🪨, Paper 🧻, or Scissors ✂️ 
 function playRPSGame() {
     // 1. get user choice
     const userChoice = prompt("Enter The Rock 🪨, Paper 🧻, or Scissors ✂️").toLowerCase();
+    // for validation
     if(userChoice !== "rock" && userChoice !== "paper" && userChoice !== "scissors") {
-        console.log("Please, input a valid Prompt to Play!");
+        console.log("Please, input a valid Prompt.");
         return playRPSGame();
     }
-
-    // 2. set computer choice
+    
+    // 2. set computer choice by random
     let computerChoice;
     const randomChoice = Math.floor(Math.random() * 3) + 1;
     
-    // 3. condition to get value from computer's choice
+    // 3. conditions for computer choice to set rock, paper & scissors
     if(randomChoice === 1) {
         computerChoice = "rock";
-    }else if(randomChoice === 2) {
-        computerChoice = "paper";
-    }else {
-        computerChoice = 'scissors';
     }
-    
-    console.log("User selected -", userChoice.toUpperCase());
-    console.log("Computer selected -", computerChoice.toUpperCase());
+    else if(randomChoice === 2) {
+        computerChoice = "paper";
+    }
+    else {
+        computerChoice = "scissors";
+    }
+    console.log("I choose -", userChoice.toUpperCase());
+    console.log("Computer choose -", computerChoice.toUpperCase());
 
-    // 4. condition apply to decided the WINNER.
+    // 4. conditions for matching both prediction
     if(
         (userChoice === "rock" && computerChoice === "scissors") ||
         (userChoice === "paper" && computerChoice === "rock") ||
         (userChoice === "scissors" && computerChoice === "paper")
     ) {
-        console.log("Yahoo...! I Win!!!");
+        console.log("Yahoo... I win!!!");
     }
     else if(
         (userChoice === "rock" && computerChoice === "paper") ||
         (userChoice === "paper" && computerChoice === "scissors") ||
         (userChoice === "scissors" && computerChoice === "rock")
     ) {
-        console.log("Oh...no! Computer is the Winner!");
+        console.log("Oh no... Computer win the game!");
     }
     else {
-        console.log("The Game is a Tie.");
+        console.log("Game has been Tied!");
     }
 
-    // 5. play again with yes in the prompt
-    const playAgainPrompt = prompt("Do you want to Play Again! (yes/no)").toLowerCase();
+    // 5. conditions for play again or exit the game
+    const playAgainPrompt = prompt("Do you want to play again? (yes/no)").toLowerCase();
     const playAgain = playAgainPrompt ? playAgainPrompt : "no";
     if(playAgain === "yes") {
         playRPSGame();
-    } else {
-        console.log("Thank You for playing, See you next time!");
+    }
+    else {
+        console.log("Thank you for playing, see you next time!");
     }
 }
+
 playRPSGame();
