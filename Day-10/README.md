@@ -4,7 +4,7 @@
 **Tasks**
 
 // 1. What will be the output of the following code and why?
-`
+```
 let user = "Alice";
 function outer() {
     function inner() {
@@ -14,7 +14,7 @@ let user = "Bob"; // Output will be "Bob"
 inner();
 }
 outer();
-`
+```
 /* Explanation 1: here, user = "Alice" is in Global Scope. 
     Go through the outer() function> there is a function inner()
     and user = "Bob". Then, we will go with Execution Phase of the inner()
