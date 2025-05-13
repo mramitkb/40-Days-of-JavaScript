@@ -1,4 +1,4 @@
-**The Scope Table(var,let,const)**
+##The Scope Table(var,let,const)
 ![The Scope Table(var,let,const)](https://github.com/user-attachments/assets/4af36545-3e96-4395-aae6-128debb912da)
 
 
