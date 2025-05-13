@@ -1,7 +1,7 @@
 ## The Scope Table(var,let,const)
 ![The Scope Table(var,let,const)](https://github.com/user-attachments/assets/4af36545-3e96-4395-aae6-128debb912da)
 
-
+`
 **Tasks**
 
 // 1. What will be the output of the following code and why?
@@ -228,3 +228,4 @@ reduce();
     1st Output: -1
     2nd Output: -2
 */
+`
