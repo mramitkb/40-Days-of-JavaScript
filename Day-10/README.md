@@ -31,6 +31,8 @@ So, here we got the `user = "Bob"` inside the `outer()` function.
 Finally, the output will be "Bob".
 
 
+
+
 ### Task-2: What is the mistake in the code below?
 ```js
 let total = 0; // Global, bad practice
@@ -59,6 +61,8 @@ function add(num) {
 }
 
 
+
+
 ### Task-3: Create a function with a nested function and log a variable from the parent function.
 ```js
 function parentFunction() {
@@ -77,6 +81,8 @@ function parentFunction() {
 }
 parentFunction();
 ```
+
+
 
 
  ### Task-4: Use a loop inside a function and declare a variable inside the loop. Can you access it outside?
@@ -100,6 +106,8 @@ But if I declare let or const, I won't be able to access them outside the
 loop because they are block-scoped.
 
 
+
+
 ### Task-5: Write a function that tries to access a variable declared inside another function.
 ```js
 function outerFunction() {
@@ -121,6 +129,8 @@ Because variables are block-scoped. We cannot access them from outside but
 We can access a variable from a higher level with Scope chaining.
 
 
+
+
 ### Task-6: What will be the output and why?
 ```js
 console.log(a);
@@ -135,6 +145,8 @@ phase, `var` variable has a value called `undefined`. But let and const don't.
 That's why we will get a `ReferenceError`.
 
 
+
+
 ### Task-7: Where is the age variable accessible?
 ```js
 function showAge() {
@@ -143,12 +155,12 @@ function showAge() {
 }
 console.log(age);
 ```
-/* Options:
+#### Options:
 
 A: In Global
 B: Only inside showAge
 C: It will cause an error
-D: None of the above */
+D: None of the above
 
 
 ### Explanation-7: 
