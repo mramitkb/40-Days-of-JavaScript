@@ -1,10 +1,11 @@
 # Day 10
+
 ## The Scope Table(var,let,const)
 ![The Scope Table(var,let,const)](https://github.com/user-attachments/assets/4af36545-3e96-4395-aae6-128debb912da)
 
 ## Tasks
 
-# Task-1: What will be the output of the following code and why?
+### Task-1: What will be the output of the following code and why?
 ```js
 let user = "Alice";
 function outer() {
@@ -16,16 +17,16 @@ inner();
 }
 outer();
 ```
-/* Explanation 1: here, user = "Alice" is in Global Scope. 
-    Go through the outer() function> there is a function inner()
-    and user = "Bob". Then, we will go with Execution Phase of the inner()
+### Explanation 1: 
+    Here, `user = Alice` is in Global Scope. 
+    Go through the `outer()` function> there is a function `inner()`
+    and `user = "Bob"`. Then, we will go with Execution Phase of the `inner()`
     function. 
-    console.log(user) will search for the variable(user) inside the inner()
+    console.log(user) will search for the variable(user) inside the `inner()`
     function. If there isn't the user variable, it will search one level higher
     means into the outer function(thats called  Scope chain).
-    So, here we got the user = "Bob" inside the outer() function.
+    So, here we got the `user = "Bob"` inside the `outer()` function.
     Finally, the output will be "Bob".
-*/
 
 
 
