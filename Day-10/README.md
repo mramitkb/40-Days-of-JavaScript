@@ -243,8 +243,8 @@ function counter() {
     };
 }
 const reduce = counter();
-reduce();
-reduce();
+reduce(); // output -1
+reduce(); // output -2
 ```
 
 
