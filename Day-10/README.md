@@ -19,7 +19,7 @@ outer();
 ```
 
 
-### Explanation-1: 
+#### Explanation-1: 
 Here, `user = Alice` is in Global Scope. 
 Go through the `outer()` function> there is a function `inner()`
 and `user = "Bob"`. Then, we will go with Execution Phase of the `inner()`
@@ -47,7 +47,7 @@ console.log(total);
 ```
 
 
-### Explanation-2: 
+#### Explanation-2: 
 Here, `total` is declared outside of the function is 
 in global scope. So, it can be accessed anywhere from the code and can 
 be a major problem/sometimes cause an error.
@@ -99,7 +99,7 @@ parentFunction();
 ```
 
 
-### Explanation-4: 
+#### Explanation-4: 
 If I declare a variable with var, I can access it 
 outside the loop but not outside the function. Because var is a function-scoped.
 But if I declare let or const, I won't be able to access them outside the 
@@ -123,7 +123,7 @@ outerFunction();
 ```
 
 
-### Explanation-5: 
+#### Explanation-5: 
 We can't access a variable that is inside another function.
 Because variables are block-scoped. We cannot access them from outside but
 We can access a variable from a higher level with Scope chaining.
@@ -138,7 +138,7 @@ let a = 10;
 ```
 
 
-### Explanation-6: 
+#### Explanation-6: 
 We cannot access let and const variables before declared.
 But we can access `var` variable before declared. Because in the execution
 phase, `var` variable has a value called `undefined`. But let and const don't.
@@ -158,12 +158,15 @@ console.log(age);
 #### Options:
 
 A: In Global
+
 B: Only inside showAge
+
 C: It will cause an error
+
 D: None of the above
 
 
-### Explanation-7: 
+#### Explanation-7: 
 `B: Only inside showAge.`
 Because age is declared inside the function. But we are trying to access
 it from outside the function. And also `showAge()` function is not called.
@@ -189,7 +192,7 @@ function outer() {
 outer();
 ```
 
-### Explanation-8: 
+#### Explanation-8: 
 We learn about the `variable shadowing`.
 So, 1st `message = "Hello"`
 2nd, we will go to the `outer()` functions inside and there is also
@@ -225,7 +228,7 @@ outer();
 ```
 
 
-### Explanation-9: 
+#### Explanation-9: 
 Same as Explanation No-8.
 Note: JavaScript will search for the nearest accessible variable with the same name.
 
@@ -245,7 +248,7 @@ reduce();
 ```
 
 
-### Explanation-10: 
+#### Explanation-10: 
 "Closure" is the main key here. 1st, we are keeping the
 `counter()` function in a variable called reduce.In the counter function,
 there is `count = 0` and a return function. So, count's 
