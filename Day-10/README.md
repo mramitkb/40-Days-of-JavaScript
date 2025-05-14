@@ -18,15 +18,15 @@ inner();
 outer();
 ```
 ### Explanation 1: 
-    Here, `user = Alice` is in Global Scope. 
-    Go through the `outer()` function> there is a function `inner()`
-    and `user = "Bob"`. Then, we will go with Execution Phase of the `inner()`
-    function. 
-    console.log(user) will search for the variable(user) inside the `inner()`
-    function. If there isn't the user variable, it will search one level higher
-    means into the outer function(thats called  Scope chain).
-    So, here we got the `user = "Bob"` inside the `outer()` function.
-    Finally, the output will be "Bob".
+Here, `user = Alice` is in Global Scope. 
+Go through the `outer()` function> there is a function `inner()`
+and `user = "Bob"`. Then, we will go with Execution Phase of the `inner()`
+function. 
+console.log(user) will search for the variable(user) inside the `inner()`
+function. If there isn't the user variable, it will search one level higher
+means into the outer function(thats called  Scope chain).
+So, here we got the `user = "Bob"` inside the `outer()` function.
+Finally, the output will be "Bob".
 
 
 
