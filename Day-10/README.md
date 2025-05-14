@@ -167,7 +167,7 @@ D: None of the above
 
 
 #### Explanation-7: 
-`B: Only inside showAge.`
+B: `Only inside showAge`.
 Because age is declared inside the function. But we are trying to access
 it from outside the function. And also `showAge()` function is not called.
 So, we will get a `ReferenceError`.
