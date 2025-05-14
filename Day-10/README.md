@@ -17,7 +17,7 @@ inner();
 }
 outer();
 ```
-### Explanation 1: 
+### Explanation-1: 
 Here, `user = Alice` is in Global Scope. 
 Go through the `outer()` function> there is a function `inner()`
 and `user = "Bob"`. Then, we will go with Execution Phase of the `inner()`
@@ -31,7 +31,8 @@ Finally, the output will be "Bob".
 
 
 
-// 2. What is the mistake in the code below?
+### Task-2: What is the mistake in the code below?
+```js
 let total = 0; // Global, bad practice
 
 function add(num) {
@@ -41,20 +42,21 @@ function add(num) {
 add(5);
 add(10);
 console.log(total);
+```
 
+### Explanation-2: 
+Here, total is declared outside of the function means 
+in Global scope. So, it can be access anywhere from the code and can 
+be a major problem/sometimes cause an error.
+We should declare a variable inside the function to avoid those kinds of
+problems and we can also use initial value for the parameter also.
+So, we can use the following code:
+function add(num) {
+    let total = 0; // Local variable
+    total += num;
+    return total;
+}
 
-/* Explanation 2: here, total is declared outside of the function means 
-    in Global scope. So, it can be access anywhere from the code and can 
-    be a major problem/sometimes cause an error.
-    We should declare a variable inside the function to avoid those kinds of
-    problems and we can also use initial value for the parameter also.
-    So, we can use the following code:
-    function add(num) {
-        let total = 0; // Local variable
-        total += num;
-        return total;
-    }
-*/
 
 
 
