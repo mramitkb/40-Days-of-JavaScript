@@ -14,8 +14,10 @@ counter();
 counter();
 ```
 ### Explanation 1:
-`output : 1`
-`output : 2`
+`1st output : 1`
+
+`2nd output : 2`
+
 Because, as we know the Closure, `count` variable will be closed inside
 the `inner()` function and can be remember the updated value even after
 executed the `outer()` function. So, we stored the `inner()` function's value(closure)
@@ -34,8 +36,8 @@ function testClosure() {
 console.log(testClosure()());
 ```
 ### Explanation 2:
-`output : 100`
-Same as above, here is another interesting thing that we need to explain.
+`output : 100` <br>
+Same explanation as above and here is another interesting thing that we need to explain.
 after returning 10 * 10 = 100 from the `testClosure()` function with Closure, 
 we also need to execute with parenthesis(). Here in the console, 
 1st `console.log(testClosure())` is keeping the inner side function into it.
@@ -88,7 +90,8 @@ mainMultiplier(5);
 - 3) The object is automatically cloned
 - 4) None of the Above.
 ### Explanation 5:
-Answer is `(2) The object remains in memory as long as the closure exists.`
+Answer: `(2) The object remains in memory as long as the closure exists.`
+
 Because, object is a references by closure so it will remember the value 
 and object won't be cloned for its closure effect.
 
