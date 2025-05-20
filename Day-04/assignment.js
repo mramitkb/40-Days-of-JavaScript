@@ -73,29 +73,41 @@ if (age < 12) {
     NB: Do not use if-else. */
 const month = "January";
 switch (month) {
+  case "January":
+    console.log("Your Zodiac sign is 'Aquarius'.");
+    break;
+  case "February":
+    console.log("Your Zodiac sign is 'Pisces'.");
+    break;
   case "March":
-  case "April":
     console.log("Your Zodiac sign is 'Aries'.");
     break;
-  case "May":
-  case "June":
+  case "April":
     console.log("Your Zodiac sign is 'Taurus'.");
     break;
-  case "July":
-  case "August":
+  case "May":
     console.log("Your Zodiac sign is 'Gemini'.");
     break;
-  case "September":
-  case "October":
+  case "June":
     console.log("Your Zodiac sign is 'Cancer'.");
     break;
-  case "November":
-  case "December":
+  case "July":
     console.log("Your Zodiac sign is 'Leo'.");
     break;
-  case "January":
-  case "February":
+  case "August":
     console.log("Your Zodiac sign is 'Virgo'.");
+    break;
+  case "September":
+    console.log("Your Zodiac sign is 'Libra'.");
+    break;
+  case "October":
+    console.log("Your Zodiac sign is 'Scorpio'.");
+    break;
+  case "November":
+    console.log("Your Zodiac sign is 'Sagittarius'.");
+    break;
+  case "December":
+    console.log("Your Zodiac sign is 'Leo'.");
     break;
   default:
     console.log("Invalid Month!");
