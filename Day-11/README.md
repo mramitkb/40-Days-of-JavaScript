@@ -1,4 +1,4 @@
-### Day 11: Closures
+# Day 11: Closures
 
 ## Task 1. What will be the output of the following code and why?
 ```js
@@ -13,12 +13,12 @@ const counter = outer();
 counter();
 counter();
 ```
-# Explanation 1:
-output : 1
-output : 2
-Because, as we know the Closure, count variable will be closed inside
-the inner() function and can be remember the updated value even after
-executed the outer() function. So, we stored the inner() function's value(closure)
+### Explanation 1:
+`output : 1`
+`output : 2`
+Because, as we know the Closure, `count` variable will be closed inside
+the `inner()` function and can be remember the updated value even after
+executed the `outer()` function. So, we stored the `inner()` function's value(closure)
 in counter variable and we will get updated value every time call this one.
 
 
@@ -33,13 +33,13 @@ function testClosure() {
 }
 console.log(testClosure()());
 ```
-# Explanation 2:
-output : 100
+### Explanation 2:
+`output : 100`
 Same as above, here is another interesting thing that we need to explain.
-after returning 10 * 10 = 100 from the testClosure() function with Closure, 
+after returning 10 * 10 = 100 from the `testClosure()` function with Closure, 
 we also need to execute with parenthesis(). Here in the console, 
-1st console.log(testClosure()) is keeping the inner side function into it.
-Then the 2nd parenthesis() is invoking/calling the returned function.
+1st `console.log(testClosure())` is keeping the inner side function into it.
+Then the 2nd `parenthesis()` is invoking/calling the returned function.
 
 
 
@@ -87,7 +87,7 @@ mainMultiplier(5);
 - 2) The object remains in memory as long as the closure exists
 - 3) The object is automatically cloned
 - 4) None of the Above.
-# Explanation 5:
+### Explanation 5:
 Answer is `(2) The object remains in memory as long as the closure exists.`
 Because, object is a references by closure so it will remember the value 
 and object won't be cloned for its closure effect.
