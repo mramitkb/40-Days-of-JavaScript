@@ -7,11 +7,11 @@ const user = { name: "Alex", age: undefined};
 console.log(user.age ?? "Not provided");
 ```
 #### Explanation 1: 
-    `user` object has age as `undefined and we see that there is 
-    a  `Nullish Coalescing = ??` operator for output. This `??` operator will 
-    check the condition that, there is any `null` or `undefined`. If yes, it will
-    return the right sides operand.
-    So, Output will be = `Not provided`
+`user` object has age as `undefined and we see that there is 
+a  `Nullish Coalescing = ??` operator for output. This `??` operator will 
+check the condition that, there is any `null` or `undefined`. If yes, it will
+return the right sides operand.
+So, Output will be = `Not provided`
 
 
 
@@ -22,10 +22,10 @@ obj.a = 2;
 console.log(obj.a);
 ```
 #### Explanation 2:
-    If we want to try modify this object, we can't be able to do it.
-    Because `Object.freeze` means it will freeze the whole object and we can't able to
-    change any key-value or add new ones.
-    So, Output will be = `1`
+If we want to try modify this object, we can't be able to do it.
+Because `Object.freeze` means it will freeze the whole object and we can't able to
+change any key-value or add new ones.
+So, Output will be = `1`
 
 
 
@@ -50,8 +50,8 @@ console.log(`I'm ${name1}, founder of "${companyName}" in ${city}(${zip})`);
 
 
 ## Task 4: Build a Student Management System
-    - Store student details in an object (name, age, grades).
-    - Implement a method to calculate the average grade.
+- Store student details in an object (name, age, grades).
+- Implement a method to calculate the average grade.
 ```js
 const student = {
     stuName: "Amit", 
@@ -72,8 +72,8 @@ console.log(`${stuName}'s average grade is ${average}`); // Average is 90.83
 
 
 ## Task 5: Book Store Inventory System 
-    - Store books in an object.
-    - Add functionality to check availability and restock books.
+- Store books in an object.
+- Add functionality to check availability and restock books.
 ```js
 const bookStore = {
     "Self Help" : {
@@ -121,10 +121,10 @@ console.log(bookStore["Money"]); // quantity: 12
 
 #### Explanation 6:
 
-    Object.keys(): Object.keys() will give us `an Array of Keys` from an object.
-    There we will get all the keys from the object in an Array. On the other hand,
-   
-    Object.entries(): Object.entries() will give us `All the key-values in different Arrays` from an Object
+Object.keys(): Object.keys() will give us `an Array of Keys` from an object.
+There we will get all the keys from the object in an Array. On the other hand,
+
+Object.entries(): Object.entries() will give us `All the key-values in different Arrays` from an Object.
 
 
 
@@ -139,9 +139,7 @@ const property = {
 console.log("company" in property); // true
 console.log("country" in property); // false
 ```
-#### Explanation 7:
-    With `in` operator for an Object, we can find is there has any
-    property or not which I'm looking for. If yes, Output will be `true` otherwise `false`.
+#### Explanation 7:With `in` operator for an Object, we can find is there has anyproperty or not which I'm looking for. If yes, Output will be `true` otherwis`false`.
 
 
 
@@ -153,10 +151,10 @@ newPerson.name = "Doe";
 console.log(person2.name); // "Doe"
 ```
 #### Explanation 8:
-    `person2` and `newPerson` is the same object(with reference value)
-    So, 3rd line we are changing the `name` key value for newPerson variable. 2nd line, 
-    newPerson = person2 (same value). That's why `person2.name`'s
-    output will be `Doe`.
+`person2` and `newPerson` is the same object(with reference value)
+So, 3rd line we are changing the `name` key value for newPerson variable. 2nd line, 
+newPerson = person2 (same value). That's why `person2.name`'s
+output will be `Doe`.
 
 
 
@@ -175,10 +173,8 @@ console.log(shallow2); // a = 300, b.c = 1000
 ```
 
 #### Shallow copy:
-    When we are dealing object with Object.assign(), there will be different
-    references for every object but nested object's will be the same reference. So, if we
-    change the normal keys value, there will be another new reference and previous value won't be
-    changed. But nested objects from the parent object will be change for their reference.
+When we are dealing object with Object.assign(), there will be different
+references for every object but nested object's will be the same reference. So, if we change the normal keys value, there will be another new reference and previous value won't be changed. But nested objects from the parent object will be change for their reference.
 
 ```js
 const deep = {
@@ -193,11 +189,8 @@ console.log(deep); // d = 40, e.f = 50
 console.log(deep2); // d = 444, e.f = 333
 ```
 #### Structured Clone(Deep Copy):
-    When we are doing a deep copy an Object with Structured Clone,
-    There will be completely different references for the object, even the nested object also.
-    So, after deep cloning the previous object, we can change the key/value of cloned one but it 
-    won't be affect the previous object to change anything. So, we should use structured clone
-    for deep cloning.
+When we are doing a deep copy an Object with Structured Clone,
+There will be completely different references for the object, even the nested object also. So, after deep cloning the previous object, we can change the key/value of cloned one but it won't be affect the previous object to change anything. So, we should use structured clone for deep cloning.
 
 
 ## Task 10: Loop and print values using Object destructuring
