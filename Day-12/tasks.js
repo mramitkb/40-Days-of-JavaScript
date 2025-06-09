@@ -102,7 +102,6 @@ const bookStore = {
 };
 bookStore.isAvailable("Self Help");
 bookStore.restockBook("Money", 10);
-bookStore.restockBook("Invest", 4);
 
 console.log(bookStore["Self Help"]); // same as key-value.
 console.log(bookStore["Money"]); // quantity: 12

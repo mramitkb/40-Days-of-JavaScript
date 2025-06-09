@@ -1,12 +1,12 @@
 # Day 12: Mastering JavaScript Object
 
 
-## 1. What will be the output and why?
+## Task 1: What will be the output and why?
 ```js
 const user = { name: "Alex", age: undefined};
 console.log(user.age ?? "Not provided");
 ```
-### Explanation 1: 
+#### Explanation 1: 
     `user` object has age as `undefined and we see that there is 
     a  `Nullish Coalescing = ??` operator for output. This `??` operator will 
     check the condition that, there is any `null` or `undefined`. If yes, it will
@@ -15,13 +15,13 @@ console.log(user.age ?? "Not provided");
 
 
 
-## 2. What will happen if we try to modify a frozen object?
+## Task 2: What will happen if we try to modify a frozen object?
 ```js
 const obj = Object.freeze({ a: 1 });
 obj.a = 2;
 console.log(obj.a);
 ```
-### Explanation 2:
+#### Explanation 2:
     If we want to try modify this object, we can't be able to do it.
     Because `Object.freeze` means it will freeze the whole object and we can't able to
     change any key-value or add new ones.
@@ -29,7 +29,7 @@ console.log(obj.a);
 
 
 
-## 3. Given an object with deeply nested properties, extract name, company, and     address.city using destructuring
+## Task 3: Given an object with deeply nested properties, extract name, company, and address.city using destructuring
 ```js
 const person1 = {
   name1: "Tapas",
@@ -49,7 +49,7 @@ console.log(`I'm ${name1}, founder of "${companyName}" in ${city}(${zip})`);
 ```
 
 
-## 4. Build a Student Management System
+## Task 4: Build a Student Management System
     - Store student details in an object (name, age, grades).
     - Implement a method to calculate the average grade.
 ```js
@@ -71,7 +71,7 @@ console.log(`${stuName}'s average grade is ${average}`); // Average is 90.83
 ```
 
 
-## 5. Book Store Inventory System 
+## Task 5: Book Store Inventory System 
     - Store books in an object.
     - Add functionality to check availability and restock books.
 ```js
@@ -111,16 +111,15 @@ const bookStore = {
 };
 bookStore.isAvailable("Self Help");
 bookStore.restockBook("Money", 10);
-bookStore.restockBook("Invest", 4);
 
 console.log(bookStore["Self Help"]); // same as key-value.
 console.log(bookStore["Money"]); // quantity: 12
 ```
 
 
-## 6. What is the difference between Object.keys() and Object.entries()? Explain with examples
+## Task 6: What is the difference between Object.keys() and Object.entries()? Explain with examples
 
-### Explanation 6:
+#### Explanation 6:
 
     Object.keys(): Object.keys() will give us `an Array of Keys` from an object.
     There we will get all the keys from the object in an Array. On the other hand,
@@ -129,7 +128,7 @@ console.log(bookStore["Money"]); // quantity: 12
 
 
 
-## 7. How do you check if an object has a certain property?
+## Task 7: How do you check if an object has a certain property?
 ```js
 const property = {
     banglo: 2,
@@ -140,20 +139,20 @@ const property = {
 console.log("company" in property); // true
 console.log("country" in property); // false
 ```
-### Explanation 7:
+#### Explanation 7:
     With `in` operator for an Object, we can find is there has any
     property or not which I'm looking for. If yes, Output will be `true` otherwise `false`.
 
 
 
-## 8. What will be the output and why?
+## Task 8: What will be the output and why?
 ```js
 const person2 = { name: "John" };
 const newPerson = person2;
 newPerson.name = "Doe";
 console.log(person2.name); // "Doe"
 ```
-### Explanation 8:
+#### Explanation 8:
     `person2` and `newPerson` is the same object(with reference value)
     So, 3rd line we are changing the `name` key value for newPerson variable. 2nd line, 
     newPerson = person2 (same value). That's why `person2.name`'s
@@ -161,7 +160,7 @@ console.log(person2.name); // "Doe"
 
 
 
-## 9. What’s the best way to deeply copy a nested object? Explain with examples
+## Task 9: What’s the best way to deeply copy a nested object? Explain with examples
 ```js
 const shallow = {
     a: 3,
@@ -201,7 +200,7 @@ console.log(deep2); // d = 444, e.f = 333
     for deep cloning.
 
 
-## 10. Loop and print values using Object destructuring
+## Task 10: Loop and print values using Object destructuring
 ```js
 const users = [
   {
